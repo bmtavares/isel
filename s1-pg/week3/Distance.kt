@@ -1,3 +1,5 @@
+import kotlin.math.*
+
 fun main () {
 	println("- Distance between 2 points -")
 	
@@ -15,8 +17,9 @@ fun main () {
 	val y2 : Double = readLine()!!.toDouble()
 	println()
 	
-	val distance : Double = Math.sqrt(
-		Math.pow((x2 - x1), 2.0) + Math.pow((y2 - y1), 2.0)
+	val distance : Double = sqrt(
+		// Math.pow((x2 - x1), 2.0) + Math.pow((y2 - y1), 2.0)
+		(x2 - x1).pow(2.0) + (y2 - y1).pow(2.0)
 		)
 	println("The total distance between ($x1,$y1) and ($x2,$y2) is $distance");
 }
