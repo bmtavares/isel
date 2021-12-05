@@ -1,0 +1,1 @@
+data class OffsetVector(val dx: Int, val dy: Int)
